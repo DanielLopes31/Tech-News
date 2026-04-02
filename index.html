@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechNews</title>
+
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/utility.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
+
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <header class="container">
+
+        <!-- NAV PRINCIPAL -->
         <nav id="primary" class="grid grid-flow-col">
+
             <div>
-                <img src="assets/images/icons/List.svg">
+                <img src="assets/images/icons/List.svg" alt="Menu">
                 <strong>Menu</strong>
             </div>
 
@@ -28,52 +36,75 @@
                 <strong>Buscar</strong>
                 <img src="assets/images/icons/MagnifyingGlass.svg" alt="ícone de lupa para pesquisa">
             </div>
+
         </nav>
 
+        <!-- NAV SECUNDÁRIO -->
         <nav id="secondary" class="grid grid-flow-col">
+
             <a href="https://chatgpt.com">Inteligência Artificial</a>
             <a href="#">Blockchain</a>
             <a href="#">Hologramas</a>
             <a href="#">Internet</a>
-            <a href="#">Vestiveis</a>
+            <a href="#">Vestíveis</a>
             <a href="#">Realidade Aumentada</a>
             <a href="#">Realidade Virtual</a>
+
         </nav>
+
     </header>
 
     <main class="grid-container">
+
         <section id="featured" class="grid grid-flow-col gap-16">
-            <div class="card">
-                <img src="assets/images/Image 01.png" alt="">
-            </div>
 
-            <div class="grid grid-cols-2 gap-16">
     <figure class="card">
-        <img src="assets/images/Image 02.png" alt="">
-
-        <figurecaption>robótica</figurecaption>
-        <span class="context-tag">Robótica</span>
-        <h2 class="text-2xl">
-           Robôs estão cada vez mais presentes em nossas vidas, desde assistentes pessoais até robôs cirúrgicos. A robótica tem o potencial de transformar a maneira como vivemos e trabalhamos, oferecendo soluções inovadoras para uma variedade de desafios. 
-        </h2>
+        <img src="assets/images/Image 01.png" alt="Robótica doméstica">
+        
+        <figcaption>
+            <span class="container-tag">Robótica</span>
+            <h2 class="text-2xl">
+                Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas resi...
+            </h2>
+        </figcaption>
     </figure>
-    
-    <div class="card">
-        <img src="assets/images/Image 03.png" alt="">
+
+    <div class="grid grid-cols-2 gap-16">
+        <figure class="card">
+            <img src="assets/images/Image 02.png" alt="Avanço em hologramas 3D surpreende especialistas em tecnologia fazendo com que eles se aproximem cada vez mais da realidade.">
+            <figcaption>
+                <span class="container-tag">Hologramas</span>
+                <h2 class="text-lg">Avanço em hologramas 3D surpreende especialistas em tecnologia fazendo com que eles se aproximem cada vez mais da re...</h2>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <img src="assets/images/Image 03.png" alt="O 6G está chegando mais proximo do que você imagina, empresa revoluciona o setor de internet com tecnologia de ponta e internet veloz, superando as expectativas do povo.">
+            <figcaption>
+                <span class="container-tag">Internet</span>
+                <h2 class="text-lg">O 6G está chegando mais proximo do que você imagina, empresa revoluciona o setor de internet com tecnologia de ponta e internet veloz, superando as expectativas do po...</h2>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <img src="assets/images/Image 04.png" alt="Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o bem-estar pessoal e emocional.">
+            <figcaption>
+                <span class="container-tag">Vestíveis</span>
+                <h2 class="text-lg">Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o bem-estar pessoal e emoc...</h2>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <img src="assets/images/Image 05.png" alt="Novo Smartphone com Realidade Virtual chega ao mercado, transformando a forma como vemos nossas telas!">
+            <figcaption>
+                <span class="container-tag">Realidade Virtual</span>
+                <h2 class="text-lg">Novo Smartphone com Realidade Virtual chega ao mercado, transformando a forma como vemos nossas te...</h2>
+            </figcaption>
+        </figure>
     </div>
 
-    <div class="card">
-        <img src="assets/images/Image 04.png" alt="">
-    </div>
+</section>
 
-    <div class="card">
-        <img src="assets/images/Image 05.png" alt="">
-    </div>
-</div>
-
-                </div>
-            </div>
-        </section>
     </main>
 
 </body>
