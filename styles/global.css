@@ -52,18 +52,13 @@ h1, h2, h3 {
     max-width: 1280px; 
     padding-inline: 32px;
     margin-inline: auto;
+
 }
 
-/* utility-first */
-.grid {
-    display: grid;
+container {
+    padding-block: 32px
 }
 
-.grid-flow-col {
-    grid-auto-flow: column;
-    align-items: center;
-}
-
-.container {
-    padding-inline: 32px;
+main {
+    margin-top: 40px;
 }
