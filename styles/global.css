@@ -13,6 +13,7 @@
     --text-color-secondary: #cbd5e1;
 
     --font-family: 'Archivo', sans-serif;
+
     --h1: 800 24px/135% var(--font-family);
     --h2: 800 16px/140% var(--font-family);
     --h3: 800 14px/140% var(--font-family);
@@ -20,7 +21,6 @@
     --text: 400 16px/140% var(--font-family);
     --text-small: 400 14px/160% var(--font-family);
 }
-
 
 body {
     font: var(--text);
@@ -35,4 +35,35 @@ a {
 
 a:hover {
     color: var(--brand-color-light);
+}
+
+/* imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3 {
+    font: inherit;
+}
+
+.container {
+    max-width: 1280px; 
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+
+/* utility-first */
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.container {
+    padding-inline: 32px;
 }
