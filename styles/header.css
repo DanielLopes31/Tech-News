@@ -1,24 +1,72 @@
+/* --- NAVEGAÇÃO PRINCIPAL (LOGO E BUSCA) --- */
 #primary {
     padding-block: 20px;
+    display: grid;
+    /* Divide em 3 colunas iguais: esquerda, centro, direita */
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: center;
+}
 
-    div {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
+#primary div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-    div::nth-child(2) {
-        margin-inline: auto;
-    }
+/* Menu (Esquerda) */
+#primary div:nth-child(1) {
+    justify-content: flex-start;
+}
 
-    div:nth-child(3) {
-       justify-self: end;
-    }
-} 
+#primary div:nth-child(1) strong {
+    font: var(--text-span);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
 
+/* Logo (Centro) */
+#primary div:nth-child(2) {
+    justify-content: center;
+}
+
+#primary div:nth-child(2) img {
+    height: 24px; /* Ajuste conforme o tamanho da sua logo */
+}
+
+/* Buscar (Direita) */
+#primary div:nth-child(3) {
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+#primary div:nth-child(3) strong {
+    font: var(--text-span);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* --- NAVEGAÇÃO SECUNDÁRIA (CATEGORIAS) --- */
 #secondary {
-    padding-block: 14px;
-    border: solid 1px var(--stroke-color);
-    border-inline: none;
-    justify-content: space-between;
+    padding-block: 16px;
+    border-block: 1px solid var(--stroke-color);
+    display: flex;
+    justify-content: space-between; /* Distribui as categorias igualmente */
+    align-items: center;
+}
+
+#secondary a {
+    font: var(--text-span);
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    white-space: nowrap; /* Impede que o texto quebre linha */
+}
+
+#secondary a:hover {
+    color: var(--brand-color-light);
+}
+
+/* Estilo específico para destacar o link ativo ou hover de categoria */
+#secondary a:first-child {
+    font-weight: 800;
 }

@@ -1,33 +1,79 @@
-/* utility-first */
+/* --- DISPLAY & LAYOUT --- */
 .grid {
     display: grid;
 }
 
+/* Força o conteúdo a fluir em colunas (usado no header e chamadas) */
 .grid-flow-col {
     grid-auto-flow: column;
     align-items: center;
 }
 
+/* Grid de 2 colunas iguais (usado no topo e no weekly) */
 .grid-cols-2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* --- ESPAÇAMENTO (GAPS) --- */
+.gap-8 {
+    gap: 8px;
+}
+
+.gap-12 {
+    gap: 12px;
 }
 
 .gap-16 {
     gap: 16px;
 }
 
-.text-2x1 {
+.gap-32 {
+    gap: 32px;
+}
+
+/* --- TIPOGRAFIA --- */
+
+/* Títulos principais (Ex: Robótica) */
+.text-2xl {
     font: var(--h1);
 }
 
+/* Títulos médios (Ex: IA seção esquerda) */
 .text-xl {
     font: var(--h2);
 }
 
+/* Títulos pequenos (Ex: Sidebar e cards menores) */
 .text-lg {
     font: var(--h3);
 }
 
+/* Parágrafos e descrições */
 .text-sm {
-    font: var(--h3);
+    font: var(--text-small);
+    color: var(--text-color-secondary);
+}
+
+/* Etiquetas e spans */
+.text-span {
+    font: var(--text-span);
+}
+
+/* --- AUXILIARES VISUAIS --- */
+
+/* Centraliza itens verticalmente em flex/grid */
+.items-center {
+    align-items: center;
+}
+
+/* Joga o item para o fim da linha (usado no "Ver tudo") */
+.justify-self-end {
+    justify-self: end;
+}
+
+/* Garante que a imagem ocupe o espaço todo do card */
+.object-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
